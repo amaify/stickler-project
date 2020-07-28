@@ -1,0 +1,175 @@
+/* BEGINNIG OF CAREERS SECTION */
+.careers__heading{
+  background: url("../images/careers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+.careers__heading > div{
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.careers__text{
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+}
+
+.careers__text hr{
+  width: 40px;
+  border-color: lightgreen;
+  border-height: 2px;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid #eee;
+}
+/* END OF CAREERS SECTION */
+
+/* BEGINING OF THE FORM SECTION */
+.contact-form__container{
+  margin-top: 4rem;
+  padding: 0 3rem;
+  font-family: "Thasadith", sans-serif;
+}
+
+#resume{
+  border: none;
+}
+
+.contact-form__title{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form{
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@supports ((display: -ms-grid) or (display: grid)) {
+  .contact-form{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10rem 0.5rem auto;
+    grid-template-columns: 15rem auto;
+    grid-row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+    margin: 1rem auto;
+    width: 40rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover{
+  border: 1px solid #40a2a5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: none;
+  background: rgba(135, 158, 32, 0.3);
+  border: 1px solid green;
+}
+
+.contact-form label{
+  font-weight: bold;
+}
+
+.contact-form button{
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 0;
+  grid-column-end: 2;
+  width: 30%;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  background: #f4f968;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.contact-form button:hover{
+  background: #879e20;
+  color: white;
+}
+
+@media (max-width: 600px) {
+   .contact-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .contact-form__container{
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
+  .contact-form button{
+    width: 100%;
+    cursor: pointer;
+  }
+ }
+/* END OF THE FORM SECTION */

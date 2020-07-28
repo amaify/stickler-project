@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="material-design-iconic-font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="careers.css">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <script src="../jquery.js"></script>
+    <title>Careers | Stickler Cleaning Services</title>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+
+<!-- BEGINNING OF THE MAIN HEADER SECTION -->
+    <header>
+      <div class="first-header">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="../images/logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="contact-us__items">
+          <div class="contact-us__item">
+            <div class="contact-us__text">
+              <div class="first-logo">
+                <h3><i class="zmdi zmdi-pin zmdi-hc-2x"></i></h3>
+              </div>
+              <div class="first-logo__text">
+                <p id="locale">3520 Uti Street, P.T.I Road <br> Effurun Delta State.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us__item">
+            <div class="contact-us__text">
+              <div class="first-logo">
+                <h3><i class="zmdi zmdi-phone zmdi-hc-2x"></i></h3>
+              </div>
+              <div class="first-logo__text">
+                <p>+234 81 395 44732</p>
+                <p>Mon-Sat: 8 A.M - 6 P.M</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+
+        <div class="nav-container">
+          <ul class="nav-items" id="nav">
+            <li class="nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../about/about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../services/services.html">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../contact/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sideDrawer-button">
+        <button id="toggle" class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <button class="scroll-button" onclick="scrollClick()">&#94;</button>
+<!-- END OF THE MAIN HEADER SECTION -->
+
+<!-- BEGINNING OF THE MOBILE NAV SECTION -->
+    <div id="mobileNav" class="main-nav__mobile">
+      <div class="closing-button">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+      </div>
+
+      <div class="mobile-nav__items">
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a href="../about/about.html">
+          About Us
+        </a>
+
+        <a href="../services/services.html">
+          Services
+        </a>
+
+        <a href="contact.html" class="active">
+          Contact Us
+        </a>
+      </div>
+    </div>
+<!-- END OF THE MOBILE NAV SECTION -->
+
+<!-- BEGINNIG OF CAREERS FORM SECTION -->
+  <main>
+    <section>
+      <div class="careers__container">
+        <div class="careers__heading">
+          <div class="careers__text">
+            <h1>Careers</h1>
+            <hr>
+            <p>Join us Today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="contact-form__container">
+        <div class="contact-form__content">
+          <h1 class="contact-form__title">Apply for a cleaning position with Stickler Cleaning Services</h1>
+
+          <form class="contact-form" method="POST" action="careers.php" enctype="multipart/form-data">
+            <label for="name">Name<span>*</span></label>
+            <input type="text" name="name" value="" placeholder="Firstname and Surname" required>
+
+            <label for="address">Address</label>
+            <input type="text" name="address" value="" placeholder="Your Address">
+
+            <label for="suburb">Suburb<span>*</span></label>
+            <input type="text" name="suburb" value="" placeholder="Suburb" required>
+
+            <label for="phone-number">Phone Number<span>*</span></label>
+            <input type="text" name="phone_number" value="" placeholder="Phone Number" required>
+
+            <label for="email">Email<span>*</span></label>
+            <input type="email" name="email" value="" placeholder="Enter Your Email" required>
+
+            <label for="work-hours">How many hours per week of work would you like<span>*</span></label>
+            <input type="number" name="work_hours" value="" required>
+
+            <label for="partner">Are you looking to work alone, or with your partner?<span>*</span></label>
+            <select class="" name="partner">
+              <option value="Yes">YES</option>
+              <option value="No">NO</option>
+            </select>
+
+            <label for="age">Age<span>*</span></label>
+            <input type="number" name="age" value="" required>
+
+            <label for="resume">Resume</label>
+            <input type="file" name="resume" value="" accept="application/msword, application/pdf, .doc, .docx" multiple id="resume">
+
+            <label for="message">Cleaning Experience</label>
+            <textarea name="message" placeholder="Cleaning Experience" rows="8"></textarea>
+
+            <button type="submit" name="submit">Submit</button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- END OF CAREERS FORM SECTION -->
+  </main>
+
+  <footer class="footer">
+    <div class="main-footer">
+
+      <div class="footer-container__content">
+        <div class="footer-container__items">
+          <h1 class="footer-brand__header">Stickler Cleaning Services</h1>
+          <p class="brand-sub">
+            with Stickler Cleaning Services, you are a beneficiary of
+            Years and Years of industry experience, knowledge and skills.
+          </p>
+        </div>
+
+        <div class="footer-container__items">
+          <h1 class="footer-brand__header">Services</h1>
+          <ul class="footer-container__item">
+            <li>
+              <a href="../services/services.html">Home Cleaning</a>
+            </li>
+
+            <li>
+              <a href="../services/services.html">Kitchen Cleaning</a>
+            </li>
+
+            <li>
+              <a href="../services/services.html">Hall Cleaning</a>
+            </li>
+
+            <li>
+              <a href="../services/services.html">Glass Cleaning</a>
+            </li>
+          </ul>
+        </div>
+
+      <div class="footer-container__items">
+        <h1 class="footer-brand__header">Quick Links</h1>
+        <ul class="footer-container__item">
+          <li class="quick-links__item">
+            <a href="../index.html">Home</a>
+          </li>
+
+          <li class="quick-links__item">
+            <a href="../about/about.html">About Us</a>
+          </li>
+
+          <li class="quick-links__item">
+            <a href="../services/services.html">Services</a>
+          </li>
+
+          <li class="quick-links__item">
+            <a href="../contact/contact.html">Contact Us</a>
+          </li>
+
+          <li class="quick-links__item">
+            <a href="careers.html">Careers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-border"></div>
+
+    <div class="footer-links">
+      <ul class="footer-links__items">
+        <li>
+          <a href="#" id="facebook-link"><i class="zmdi zmdi-facebook"></i></a>
+        </li>
+
+        <li>
+          <a href="#" id="twitter-link"><i class="zmdi zmdi-twitter"></i></a>
+        </li>
+
+        <li>
+          <a href="#" id="instagram-link"><i class="zmdi zmdi-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-link__border"></div>
+      <div class="footer-trademark">
+        <h3>All rights reserved Stickler Cleaning services. <span>&copy;</span></h3>
+      </div>
+    </div>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>
