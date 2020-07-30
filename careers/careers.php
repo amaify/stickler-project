@@ -11,12 +11,12 @@
     by simply filling out the Form. Feel free to upload your CV">
     <meta name="keywords" content="Cleaning Job, Melbourne, Australia">
     <link rel="stylesheet" href="material-design-iconic-font.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="careers.css">
     <link rel="shortcut icon" href="../images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:300,400,500,700" rel="stylesheet">
     <script src="../jquery.js"></script>
     <title>Careers | Stickler Cleaning Services</title>
   </head>
@@ -90,6 +90,10 @@
         <span class="toggle-button__bar"></span>
       </button>
     </div>
+
+    <button class="phone__number">
+      <a href="tel: 1300845433" class="phone__link">1300 845 433</a>
+    </button>
   </header>
 <!-- END OF THE MAIN HEADER SECTION -->
 
@@ -126,7 +130,7 @@
       <div class="careers__container">
         <div class="careers__heading">
           <div class="careers__text">
-            <h1>Careers</h1>
+            <h2>Careers</h2>
             <hr>
             <p>Join us Today</p>
           </div>
@@ -137,7 +141,7 @@
     <section>
       <div class="contact-form__container">
         <div class="contact-form__content">
-          <h1 class="contact-form__title">Apply for a cleaning position with Stickler Cleaning Services</h1>
+            <h3 class="contact-form__title">Apply for a cleaning position with Stickler Cleaning Services</h3>
 
             <!-- Display submission status -->
             <?php if(!empty($statusMsg)){ ?>
@@ -145,47 +149,64 @@
             <?php } ?>
 
 <!-- Display contact form -->
-          <form method="post" action="" enctype="multipart/form-data" class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="form-control" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" placeholder="Name" required="">
+<form method="post" action="" enctype="multipart/form-data" class="contact-form">
+            <div class="formGroup">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" value="<?php echo !empty($postData['name'])?$postData['name']:''; ?>" placeholder="Name" required="">
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" class="form-control" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" placeholder="Email address" required="">
+            <div class="formGroup">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" placeholder="Email address" required="">
+            </div>
+            
+            <div class="formGroup">
+              <label for="address">Address</label>
+              <input type="text" name="address" class="form-control" value="<?php echo !empty($postData['address'])?$postData['address']:''; ?>" placeholder="Address" required="">
+            </div>
 
-            <label for="address">Address</label>
-            <input type="text" name="address" class="form-control" value="<?php echo !empty($postData['address'])?$postData['address']:''; ?>" placeholder="Address" required="">
+            <div class="formGroup">
+              <label for="suburb">Suburb</label>
+              <input type="text" name="suburb" class="form-control" value="<?php echo !empty($postData['suburb'])?$postData['suburb']:''; ?>" placeholder="Suburb" required="">
+            </div>
 
-            <label for="suburb">Suburb</label>
-            <input type="text" name="suburb" class="form-control" value="<?php echo !empty($postData['suburb'])?$postData['suburb']:''; ?>" placeholder="Suburb" required="">
+            <div class="formGroup">
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" name="phone_number" class="form-control" value="<?php echo !empty($postData['phone_number'])?$postData['phone_number']:''; ?>" placeholder="Phone Number" required="">
+            </div>
 
-            <label for="phone_number">Phone Number</label>
-            <input type="tel" name="phone_number" class="form-control" value="<?php echo !empty($postData['phone_number'])?$postData['phone_number']:''; ?>" placeholder="Phone Number" required="">
+            <div class="formGroup">
+              <label for="work_hours">Working Hours</label>
+              <input type="number" name="work_hours" class="form-control" value="<?php echo !empty($postData['work_hours'])?$postData['work_hours']:''; ?>" placeholder="Working Hours" required="">
+            </div>
 
-            <label for="work_hours">Working Hours</label>
-            <input type="number" name="work_hours" class="form-control" value="<?php echo !empty($postData['work_hours'])?$postData['work_hours']:''; ?>" placeholder="Working Hours" required="">
+            <div class="formGroup">
+              <label for="partner">Are you looking to work alone, or with your partner?</label>
+              <select  name="partner">
+                <option value="">Select....</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
 
-            <label for="partner">Are you looking to work alone, or with your partner?</label>
-            <select  name="partner">
-              <option value="">Select....</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
+            <div class="formGroup">
+              <label for="age">Age</label>
+              <input type="number" name="age" class="form-control" value="<?php echo !empty($postData['age'])?$postData['age']:''; ?>" placeholder="Age" required="">
+            </div>
 
-            <label for="age">Age</label>
-            <input type="number" name="age" class="form-control" value="<?php echo !empty($postData['age'])?$postData['age']:''; ?>" placeholder="Age" required="">
+            <div class="formGroup">
+              <label for="message">Message</label>
+              <textarea name="message" class="form-control" placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
+            </div>
 
+            <div class="formGroup">
+              <label for="file">Resume/CV</label>
+              <input type="file" name="attachment" class="form-control" id="resume">
+            </div>
 
-            <label for="message">Message</label>
-            <textarea name="message" class="form-control" placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
-
-            <label for="file">Resume/CV</label>
-            <input type="file" name="attachment" class="form-control" id="resume">
-
-
-            <button type="submit" name="submit" class="btn" value="SUBMIT">SUBMIT</button>
-
-
-
+            <div class="formGroup formGroup-btn">
+              <button type="submit" name="submit" class="btn" value="SUBMIT">SUBMIT</button>
+            </div>
           </form>
         </div>
       </div>
@@ -199,7 +220,7 @@
 
       <div class="footer-container__content">
         <div class="footer-container__items">
-          <h1 class="footer-brand__header">Stickler Cleaning Services</h1>
+          <h3 class="footer-brand__header">Stickler Cleaning Services</h3>
           <p class="brand-sub">
             with Stickler Cleaning Services, you are a beneficiary of
             Years and Years of industry experience, knowledge and skills.
@@ -207,7 +228,7 @@
         </div>
 
         <div class="footer-container__items">
-          <h1 class="footer-brand__header">Services</h1>
+          <h3 class="footer-brand__header">Services</h3>
           <ul class="footer-container__item">
             <li>
               <a href="../services/services.html">Home Cleaning</a>
@@ -228,7 +249,7 @@
         </div>
 
       <div class="footer-container__items">
-        <h1 class="footer-brand__header">Quick Links</h1>
+        <h3 class="footer-brand__header">Quick Links</h3>
         <ul class="footer-container__item">
           <li>
             <a href="../services/services.html">Office Cleaning</a>
@@ -258,7 +279,7 @@
             <a href="../services/services.html">School Cleaning</a>
           </li>
 
-          <li>
+          <!-- <li>
             <a href="../services/services.html">Bond Cleaning</a>
           </li>
 
@@ -268,7 +289,7 @@
 
           <li>
             <a href="../services/services.html">Deceased Estate Cleaning</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>

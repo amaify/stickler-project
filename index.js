@@ -111,6 +111,16 @@ serviceItems.forEach(function(service, index) {
       modal[4].classList.add("open__modal");
       backgroundOverlay.classList.add("open__background");
     }
+
+    if (index === 5) {
+      modal[5].classList.add("open__modal");
+      backgroundOverlay.classList.add("open__background");
+    }
+
+    if (index === 6) {
+      modal[6].classList.add("open__modal");
+      backgroundOverlay.classList.add("open__background");
+    }
   });
 });
 

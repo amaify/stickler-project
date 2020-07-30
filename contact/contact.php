@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="shortcut icon" href="../images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,500,600,700" rel="stylesheet">
     <title>Contact Us | Stickler Cleaning Services</title>
   </head>
   <body>
@@ -86,6 +86,10 @@
           <span class="toggle-button__bar"></span>
         </button>
       </div>
+
+      <button class="phone__number">
+        <a href="tel: 1300845433" class="phone__link">1300 845 433</a>
+      </button>
     </header>
 <!-- END OF THE MAIN HEADER SECTION -->
 
@@ -121,7 +125,7 @@
         <div class="contact__container">
           <div class="contact__heading">
             <div class="contact__text">
-              <h1>Contact Us</h1>
+              <h2>Contact Us</h2>
               <hr>
               <p>We are Waiting to Hear From You.</p>
             </div>
@@ -134,43 +138,54 @@
       <section>
         <div class="contact-form__container">
           <div class="contact-form__content">
-            <h1 class="contact-form__title">Leave a Message</h1>
+            <h3 class="contact-form__title">Leave a Message</h3>
 
             <?php if(!empty($statusMsg)){ ?>
                 <p style="text-align: center; font-size: 18px; font-weight: bold; color: #879e20" class="statusMsg <?php echo !empty($msgClass)?$msgClass:''; ?>"><?php echo $statusMsg; ?></p>
             <?php } ?>
 
             <form name="form" class="contact-form" method="POST" action=""  enctype="multipart/form-data">
-              <label for="name">Name</label>
-              <input id="name" type="text" name="name" class="form-control" value="" placeholder="Name">
+              <div class="formGroup">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" class="form-control" value="" placeholder="James Peterson">
+              </div>
 
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email" class="form-control" value="" placeholder="Email address">
+              <div class="formGroup">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" class="form-control" value="" placeholder="james.peterson@yahoo.com">
+              </div>
 
-              <label for="subject">Subject</label>
-              <input id="subject" type="text" name="subject" class="form-control" value="" placeholder="Subject">
+              <div class="formGroup">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" name="subject" class="form-control" value="" placeholder="Subject">     
+              </div>
 
-              <label for="service">Service Needed</label>
-              <select id="select" name="service">
-                <option value="">Select....</option>
-                <option value="Office Cleaning">Office Cleaning</option>
-                <option value="Building / Warehouse Cleaning">building / warehouse Cleaning</option>
-                <option value="Bank Cleaning">Bank Cleaning</option>
-                <option value="House Cleaning">House Cleaning</option>
-                <option value="Gym Cleaning">Gym Cleaning</option>
-                <option value="Medical Center Cleaning">Medical Center Cleaning</option>
-                <option value="Childcare center cleaning">Childcare Center Cleaning</option>
-                <option value="School Cleaning">School Cleaning</option>
-                <option value="Bond Cleaning">Bond Cleaning</option>
-                <option value="Emergency Cleaning">Emergency Cleaning</option>
-                <option value="Deceased Estate Cleaning">Deceased Estate Cleaning</option>
-              </select>
+              <div class="formGroup">
+                <label for="service">Service Needed</label>
+                <select id="select" name="service">
+                  <option value="">Select....</option>
+                  <option value="Office Cleaning">Office Cleaning</option>
+                  <option value="Building / Warehouse Cleaning">building / warehouse Cleaning</option>
+                  <option value="Bank Cleaning">Bank Cleaning</option>
+                  <option value="House Cleaning">House Cleaning</option>
+                  <option value="Gym Cleaning">Gym Cleaning</option>
+                  <option value="Medical Center Cleaning">Medical Center Cleaning</option>
+                  <option value="Childcare center cleaning">Childcare Center Cleaning</option>
+                  <option value="School Cleaning">School Cleaning</option>
+                  <option value="Bond Cleaning">Bond Cleaning</option>
+                  <option value="Emergency Cleaning">Emergency Cleaning</option>
+                  <option value="Deceased Estate Cleaning">Deceased Estate Cleaning</option>
+                </select>
+              </div>
 
-              <label for="message">Message</label>
-              <textarea name="message" class="form-control" placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
+              <div class="formGroup">              
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control" placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
+              </div>
 
-              <button type="submit" id="button" name="submit">Send Message</button>
-
+              <div class="formGroup formGroup-btn">
+                <button type="submit" id="button" name="submit">Send Message</button>
+              </div>
             </form>
           </div>
         </div>
@@ -180,7 +195,7 @@
 <!-- BEGINING OF THE CONTACTS SECTION -->
       <section>
         <div class="contacts-container">
-          <h1>Get in touch to ask us any questions or book our service</h1>
+          <h3>Get in touch to ask us any questions or book our service</h3>
 
           <div class="contacts-content">
             <div class="contacts-items">
@@ -210,6 +225,7 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 <!-- END OF THE CONTACTS SECTION -->
     </main>
@@ -221,7 +237,7 @@
 
         <div class="footer-container__content">
           <div class="footer-container__items">
-            <h1 class="footer-brand__header">Stickler Cleaning Services</h1>
+            <h3 class="footer-brand__header">Stickler Cleaning Services</h3>
             <p class="brand-sub">
               with Stickler Cleaning Services, you are a beneficiary of
               Years and Years of industry experience, knowledge and skills.
@@ -229,7 +245,7 @@
           </div>
 
           <div class="footer-container__items">
-            <h1 class="footer-brand__header">Services</h1>
+            <h3 class="footer-brand__header">Services</h3>
             <ul class="footer-container__item">
             <li>
                 <a href="../services/services.html">Office Cleaning</a>
@@ -259,7 +275,7 @@
                 <a href="../services/services.html">School Cleaning</a>
               </li>
 
-              <li>
+              <!-- <li>
                 <a href="../services/services.html">Bond Cleaning</a>
               </li>
 
@@ -269,12 +285,12 @@
 
               <li>
                 <a href="../services/services.html">Deceased Estate Cleaning</a>
-              </li>
+              </li> -->
             </ul>
           </div>
 
           <div class="footer-container__items">
-            <h1 class="footer-brand__header">Quick Links</h1>
+            <h3 class="footer-brand__header">Quick Links</h3>
             <ul class="footer-container__item">
               <li class="quick-links__item">
                 <a href="../index.html">Home</a>
@@ -344,15 +360,6 @@
               <p>
                 Deliver quality outcomes and long-term relationships through our service coupled
                 with a focus on amazing customer experience on every interaction.
-              </p>
-            </h3>
-
-            <h3 class="footer-word">
-              Privacy Statement 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt omnis 
-                voluptates maxime tenetur officia aperiam dolor fuga harum nobis quod maiores 
-                vero eum, laborum tempora provident vel distinctio! Dolor, ducimus?
               </p>
             </h3>
           </div>

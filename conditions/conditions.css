@@ -1,13 +1,17 @@
+main {
+    font-family: "Montserrat", sans-serif;
+  }
+
 .privacyPolicy {
     padding: 4rem 2rem;
     margin-top: 3rem;
 }
 
 .privacyPolicy__heading {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
     color: rgb(37, 36, 36);
-    margin: 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .privacyPolicy__intro {
