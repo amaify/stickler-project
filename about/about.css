@@ -94,6 +94,7 @@ main {
 
 .about-us__items h3{
   font-size: 2rem;
+  font-weight: 300;
 }
 
 @supports ((display: -ms-grid) or (display: grid)) {
@@ -108,17 +109,11 @@ main {
   }
 }
 
-.about-us__left{
-  font-family: "Thasadith", sans-serif;
-}
-
 .about-us__left p{
-  font-weight: 600;
+  font-weight: 500;
   line-height: 2rem;
-  text-align: justify;
-  text-justify: distribute;
-    /* font-weight: 300; */
-    color: #575757;
+ 
+  color: #575757;
 }
 
 .about-us__item{
@@ -209,10 +204,6 @@ main {
       margin: 0 auto;
     }
   }
-
-  .about-us__left p{
-    font-weight: 600;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -238,20 +229,12 @@ main {
     -o-object-fit: contain;
        object-fit: contain;
   }
-
-  .about-us__left p{
-    font-weight: 600;
-  }
 }
 
 @media only screen and (max-width: 750px) {
   .about-us__description{
     display: block;
     padding: 0 1rem;
-  }
-
-  .about-us__left p{
-    font-weight: 600;
   }
 }
 /* END OF THE ABOUT US DESCRIPTION */
@@ -316,7 +299,6 @@ main {
 }
 
 .quality-text__content p{
-  text-align: justify;
   line-height: 1.5rem;
   font-size: 0.8rem;
 }
@@ -699,7 +681,7 @@ main {
 
 .testimonial-text{
   font-weight: 600;
-  text-align: justify;
+  text-align: center;
   font-style: italic;
   width: 60%;
   margin: 0 auto;

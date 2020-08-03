@@ -293,7 +293,8 @@ main {
   }
 
   .services__heading p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
   }
 
   .title__text {
@@ -351,11 +352,19 @@ main {
   transition: all 0.3s ease-out;
 }
 
+.modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
 .modal p{
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  font-weight: 300;
-  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: left;
 }
 
 .modal_contact{
@@ -417,10 +426,6 @@ main {
     -webkit-transform: translateZ(10deg);
             transform: translateZ(10deg);
   }
-}
-
-.modal h1{
-  text-align: center;
 }
 
 .modal a:hover{
@@ -497,6 +502,7 @@ main {
         -ms-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
   }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -512,9 +518,7 @@ main {
   }
 
   .modal p{
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    font-weight: 300;
+    font-size: 1rem;
   }
 
   .open__modal{
@@ -538,12 +542,7 @@ main {
   }
 
   .modal p{
-    font-size: 0.8rem;
-    line-height: 1rem;
-  }
-
-  .modal h1{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .modal a{

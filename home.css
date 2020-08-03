@@ -428,8 +428,6 @@ main {
     }
 
     .description__welcome p{
-      text-align: justify;
-      text-justify: distribute;
       line-height: 1.5rem;
     }
 
@@ -553,8 +551,6 @@ main {
   .test p{
     line-height: 1.6rem;
     font-size: 0.9rem;
-    text-align: justify;
-    text-justify: distribute;
     color: #6d6c6c;
   }
 
@@ -1122,6 +1118,18 @@ main {
             -webkit-align-items: center;
             align-items: center;
   }
+
+  .company-details__item h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .company-details__item p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 300;
+  }
 }
 
 
@@ -1173,11 +1181,19 @@ main {
   transition: all 0.3s ease-out;
 }
 
+.modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
 .modal p{
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  font-weight: 300;
-  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  text-align: left;
 }
 
 .modal_contact{
@@ -1239,10 +1255,6 @@ main {
     -webkit-transform: translateZ(10deg);
             transform: translateZ(10deg);
   }
-}
-
-.modal h1{
-  text-align: center;
 }
 
 .modal a:hover{
@@ -1333,12 +1345,6 @@ main {
     text-align: center;
   }
 
-  .modal p{
-    font-size: 1.2rem;
-    line-height: 1.3rem;
-    font-weight: 300;
-  }
-
   .open__modal{
     opacity: 1;
     visibility: visible;
@@ -1360,8 +1366,7 @@ main {
   }
 
   .modal p{
-    font-size: 0.8rem;
-    line-height: 1rem;
+    font-size: 0.9rem;
   }
 
   .modal h1{

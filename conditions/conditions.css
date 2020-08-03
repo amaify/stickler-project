@@ -17,8 +17,7 @@ main {
 .privacyPolicy__intro {
     font-size: 1rem;
     line-height: 2rem;
-    text-align: justify;
-    text-justify: distribute;
+    text-align: left;
     color: #333;
 }
 
@@ -34,8 +33,7 @@ main {
 .privacyPolicy__content {
     margin-bottom: 1.5rem;
     line-height: 2rem;
-    text-align: justify;
-    text-justify: distribute;
+    text-align: left;
     color: #333;
 }
 
