@@ -59,20 +59,22 @@ if(isset($_POST['submit'])){
                 // Message
                 $htmlContent =
                 '
-                <html><body>
-                <div style="background: #317f41; text-align: center;">
-                <div style="text-align: center; padding: 13px 0; width: 100%;">
-                <table rules="all" style="width: 97%; margin-right: auto; margin-left: auto; margin-bottom: 25px; text-align: left; font-size: 18px; border-collapse: collapse; table-layout: fixed " cellpadding="10">
-                <h1 style="color: #dbdbd2; font-size: 18px;">Contact Request Submitted</h1>
-                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Name</b></td><td> '.$name.'</p></td></tr>
-                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Email</b></td><td> '.$email.'</p></td></tr>
-                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Subject</b></td><td> '.$subject.'</p></td></tr>
-                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Type of Service Request</b></td><td> '.$services.'</p></td></tr>
-                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Message</b></td><td>'.$message.'</p></td></tr>
-                </table>
-                </div>
-                </div>
-                </body></html>
+                <html>
+                    <body>
+                        <div style="background: #317f41; text-align: center;">
+                            <div style="text-align: center; padding: 13px 0; width: 100%;">
+                                <table rules="all" style="width: 97%; margin-right: auto; margin-left: auto; margin-bottom: 25px; text-align: left; font-size: 18px; border-collapse: collapse; table-layout: fixed " cellpadding="10">
+                                <h1 style="color: #dbdbd2; font-size: 18px;">Contact Request Submitted</h1>
+                                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Name</b></td><td> '.$name.'</p></td></tr>
+                                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Email</b></td><td> '.$email.'</p></td></tr>
+                                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Subject</b></td><td> '.$subject.'</p></td></tr>
+                                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Type of Service Request</b></td><td> '.$services.'</p></td></tr>
+                                    <tr style="background: #eee; border: 1px solid #ddd; padding: 15px;"><td style="border: 1px solid #ddd;"><p><b>Message</b></td><td>'.$message.'</p></td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </body>
+                </html>
                 ';
 
 

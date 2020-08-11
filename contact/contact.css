@@ -1,5 +1,5 @@
 main {
-  font-family: "Thasadith", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* BEGINNING OF THE CONTACT US HEADING SECTION */
@@ -98,9 +98,9 @@ main {
 
 .formGroup label {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: black;
 }
 
@@ -235,7 +235,6 @@ main {
 .contacts-container{
   margin-top: 3.5rem;
   padding: 2rem 6rem;
-  font-family: "Thasadith", sans-serif;
 }
 
 .contacts-content{
@@ -263,7 +262,8 @@ main {
 }
 
 .contacts-items h3{
-  color: #666464;
+  color: #242323;
+  font-size: 1rem;
 }
 
 .contacts-items i{
@@ -274,12 +274,6 @@ main {
   background: #dde516;
   color: white;
   cursor: pointer;
-}
-
-.contacts-items:hover p,
-.contacts-items:hover h3,
-.contacts-items:hover i{
-  color: white;
 }
 
 @media (max-width: 600px) {
@@ -311,9 +305,8 @@ main {
     cursor: default;
   }
 
-  .contacts-items:hover p,
   .contacts-items:hover h3{
-    color: #666464;
+    color: #242323;
   }
 
   .contacts-items:hover i{
@@ -330,7 +323,7 @@ main {
   .contacts-container__title {
     font-size: 1.6rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.5rem;
   }
 
@@ -362,12 +355,6 @@ main {
     cursor: default;
   }
 
-  .contacts-items:hover p,
-  .contacts-items:hover h3,
-  .contacts-items:hover i{
-    color: #666464;
-  }
-
   @supports ((display: -ms-grid) or (display: grid)) {
     .contacts-content{
       display: -ms-grid;
@@ -379,6 +366,7 @@ main {
 
     .contacts-items{
       width: 100%;
+      border: 1px solid #398448;
     }
   }
 
@@ -396,8 +384,8 @@ main {
   }
 
   .contacts-items h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     margin-bottom: 0.4rem;
     color: #242323
   }
@@ -425,7 +413,7 @@ main {
   .contacts-container__title {
     font-size: 2rem;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1.5rem;
   }
 
@@ -436,15 +424,14 @@ main {
   }
 
   .contacts-items:hover p,
-  .contacts-items:hover h3,
-  .contacts-items:hover i{
+  .contacts-items:hover i,
+  .contacts-items:hover h3 {
     color: white;
   }
 
   @supports ((display: -ms-grid) or (display: grid)) {
     .contacts-content{
-      /* -ms-grid-columns: (23%)[4]; */
-      grid-template-columns: repeat(4, 23%);
+      grid-template-columns: repeat(3, 30%);
     }
   }
 

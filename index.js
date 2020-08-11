@@ -4,7 +4,7 @@ let btnContainer = document.getElementById("nav");
 let btn = btnContainer.getElementsByClassName("nav-item");
 
 for (let i = 0; i < btn.length; i++) {
-  btn[i].addEventListener("click", function() {
+  btn[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", " ");
 
@@ -19,27 +19,27 @@ let nav = document.getElementById("mobileNav");
 let backDrop = document.querySelector(".backdrop");
 let closeButton = document.querySelector(".closebtn");
 
-toggle.addEventListener("click", function() {
+toggle.addEventListener("click", function () {
   nav.style.width = "80%";
 
-  setTimeout(function() {
+  setTimeout(function () {
     backDrop.classList.add("open");
   }, 0);
 });
 
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   nav.style.width = "0%";
   backDrop.classList.remove("open");
 });
 
-backDrop.addEventListener("click", function() {
+backDrop.addEventListener("click", function () {
   nav.style.width = "0%";
   backDrop.classList.remove("open");
 });
 // END OF THE CODE FOR OPENING AND CLOSING THE SIDEDRAWER
 
 //BEGINNING OF CODE FOR FIXING OUR MAIN NAVIGATION BAR TO THE TOP ON SCROLL
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -85,42 +85,14 @@ const serviceItems = document.querySelectorAll(".services__item");
 const modal = document.querySelectorAll(".modal");
 const backgroundOverlay = document.querySelector("#testback");
 
-serviceItems.forEach(function(service, index) {
-  service.addEventListener("click", function() {
-    if (index === 0) {
-      modal[0].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 1) {
-      modal[1].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 2) {
-      modal[2].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 3) {
-      modal[3].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 4) {
-      modal[4].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 5) {
-      modal[5].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
-
-    if (index === 6) {
-      modal[6].classList.add("open__modal");
-      backgroundOverlay.classList.add("open__background");
-    }
+serviceItems.forEach((service, index) => {
+  service.addEventListener("click", () => {
+    modal.forEach((m, i) => {
+      if (index === i) {
+        m.classList.add("open__modal");
+        backgroundOverlay.classList.add("open__background");
+      }
+    });
   });
 });
 
@@ -131,32 +103,7 @@ if (backgroundOverlay) {
 function closeBackdrop() {
   backgroundOverlay.classList.remove("open__background");
 
-  modal.forEach(function(mods) {
+  modal.forEach(function (mods) {
     mods.classList.remove("open__modal");
   });
 }
-
-// const form = document.querySelector(".contact-form");
-// const inputForm = document.querySelectorAll("input");
-
-// function validation() {
-//   inputForm.forEach(input => {
-//     input.addEventListener("keyup", function() {
-//       if (input.value != "") {
-//         document.getElementById("button").disabled = false;
-//       } else {
-//         document.getElementById("button").disabled = true;
-//       }
-//     });
-//   });
-// }
-
-// validation();
-
-// form.addEventListener("submit", e => {
-//   inputForm.forEach(input => {
-//     input.value = "";
-//   });
-
-//   e.preventDefault();
-// });

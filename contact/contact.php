@@ -161,7 +161,7 @@
               </div>
 
               <div class="formGroup">
-                <label for="service">Service Needed</label>
+                <label for="service">Type of Service</label>
                 <select id="select" name="service">
                   <option value="">Select....</option>
                   <option value="Office Cleaning">Office Cleaning</option>
@@ -172,15 +172,16 @@
                   <option value="Medical Center Cleaning">Medical Center Cleaning</option>
                   <option value="Childcare center cleaning">Childcare Center Cleaning</option>
                   <option value="School Cleaning">School Cleaning</option>
-                  <option value="Bond Cleaning">Bond Cleaning</option>
-                  <option value="Emergency Cleaning">Emergency Cleaning</option>
-                  <option value="Deceased Estate Cleaning">Deceased Estate Cleaning</option>
+                  <option value="Others">Others</option>
                 </select>
               </div>
 
               <div class="formGroup">              
                 <label for="message">Message</label>
-                <textarea name="message" class="form-control" placeholder="Write your message here" required=""><?php echo !empty($postData['message'])?$postData['message']:''; ?></textarea>
+                <textarea name="message" class="form-control" rows="10" required>
+                  <?php echo !empty($postData['message'])?$postData['message']:''; ?>
+                  Write your message here
+                </textarea>
               </div>
 
               <div class="formGroup formGroup-btn">
@@ -211,12 +212,12 @@
               <p>1300 845 433</p>
             </div>
 
-            <div class="contacts-items">
+            <!-- <div class="contacts-items">
               <i class="zmdi zmdi-time zmdi-hc-2x"></i>
               <h3>Office Hours</h3>
               <p>Mon-Sat: 9 a.m - 8 p.m</p>
               <p>Sunday Closed</p>
-            </div>
+            </div> -->
 
             <div class="contacts-items">
               <i class="zmdi zmdi-pin zmdi-hc-2x"></i>
