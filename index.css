@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -11,6 +15,7 @@ body{
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* BEGINNING OF THE MODAL SECTION */
@@ -423,7 +428,7 @@ body{
   }
 
   .nav-item{
-    margin: 0 1rem;
+    margin: 0 0.5rem;
   }
 }
 /* END OF THE MAIN NAVIGATION   */
