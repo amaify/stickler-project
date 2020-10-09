@@ -110,10 +110,10 @@ main {
 }
 
 .about-us__left p{
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 2rem;
  
-  color: #575757;
+  color: #6d6c6c;
 }
 
 .about-us__item{

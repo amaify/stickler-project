@@ -373,6 +373,8 @@ main {
 
   .description__welcome .why-us__text{
     line-height: 1.9rem;
+    text-align: left;
+    color: #6d6c6c;
   }
 
   .welcome-items{

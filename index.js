@@ -20,7 +20,7 @@ let backDrop = document.querySelector(".backdrop");
 let closeButton = document.querySelector(".closebtn");
 
 toggle.addEventListener("click", function () {
-  nav.style.width = "80%";
+  nav.style.width = "50%";
 
   setTimeout(function () {
     backDrop.classList.add("open");

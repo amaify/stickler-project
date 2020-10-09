@@ -18,6 +18,11 @@ body{
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: #0dc629;
+  color: #fff;
+}
+
 /* BEGINNING OF THE MODAL SECTION */
 .backdrop{
   background: rgba(0, 0, 0, 0.5);
@@ -350,15 +355,14 @@ body{
   }
 
   .main-nav__mobile a{
-    border-bottom: 1px solid #35442d;
+    /* border-bottom: 1px solid #35442d; */
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: left;
     text-decoration: none;
     color: #fcf7f7;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    font-weight: 400;
     font-size: 20px;
     display: block;
   }

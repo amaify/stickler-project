@@ -92,7 +92,10 @@
     </div>
 
     <button class="phone__number">
-      <a href="tel: 1300845433" class="phone__link">1300 845 433</a>
+      <a href="tel: 1300845433" class="phone__link">
+        <i class="zmdi zmdi-phone zmdi-hc-1x"></i>
+        <span class="phone__number-digits">1300 845 433</span>
+      </a>
     </button>
   </header>
 <!-- END OF THE MAIN HEADER SECTION -->
