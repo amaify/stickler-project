@@ -255,8 +255,8 @@ main {
   text-align: center;
   border: 1px solid #eee;
   padding: 1rem 0;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .contacts-items p{

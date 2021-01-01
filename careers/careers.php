@@ -10,7 +10,6 @@
     <meta name="description" content="Searching for a Cleaning Job? Join our team of Cleaning experts 
     by simply filling out the Form. Feel free to upload your CV">
     <meta name="keywords" content="Cleaning Job, Melbourne, Australia">
-    <link rel="stylesheet" href="material-design-iconic-font.css">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="careers.css">
     <link rel="shortcut icon" href="../images/logo.png">
