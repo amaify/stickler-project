@@ -164,10 +164,7 @@ body {
         width: 8%;
     }
 }
-
-
 /* END OF FIRST HEADER */
-
 
 /* BEGINING OF MAIN NAVIGATION */
 
@@ -418,13 +415,10 @@ body {
         margin: 0 0.5rem;
     }
 }
-
-
 /* END OF THE MAIN NAVIGATION   */
 
 
 /* BEGINNING OF THE FOOTER SECTION */
-
 .main-footer {
     margin-top: 4rem;
     font-family: 'Montserrat', sans-serif;
@@ -769,9 +763,4 @@ body {
         padding: 0.2rem 6rem;
     }
 }
-
-
 /* END OF THE FOOTER SECTION */
-
-
-/* } */

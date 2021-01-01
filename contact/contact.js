@@ -59,8 +59,8 @@ class sendMail {
   sendEmail(mail) {
     Email.send({
       Host: "smtp.mailtrap.io",
-      Username: "9528f02595d128",
-      Password: "04bb2c98726e86",
+      Username: "9528f02595d128", //MAILTRAP WAS USED HERE, SO YOU SHOULD GET YOUR OWN MAILTRAP DETAILS.
+      Password: "04bb2c98726e86", //MAILTRAP WAS USED HERE, SO YOU SHOULD GET YOUR OWN MAILTRAP DETAILS.
       To: "info@stickler.com.au",
       From: "info@stickler.com",
       Subject: "CONTACT REQUEST",
@@ -68,7 +68,7 @@ class sendMail {
     <html>
     <h2>Header</h2>
     <p>Hello My name is ${mail.name}</p> 
-    <p>Choosen Service: ${mail.options}</p>
+    <p>Chosen Service: ${mail.options}</p>
     <p>Email: ${mail.email}</p>
     <p>Message: ${mail.message}</p>
     </html>

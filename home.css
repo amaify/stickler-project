@@ -5,8 +5,6 @@ main {
 .mySlides {
     display: none;
 }
-
-
 /* BEGINING OF THE SLIDESHOW SECTION */
 
 
@@ -323,7 +321,6 @@ main {
     }
     .caption-2 {
         left: 52%;
-        /* width: 100%; */
         font-size: 1.2rem;
     }
     .caption-3 {
@@ -347,13 +344,10 @@ main {
         display: block;
     }
 }
-
-
 /* END OF THE SLIDESHOW SECTION */
 
 
 /* BEGINNING OF DESCRIPTION SECTION */
-
 .description__section {
     margin-top: 4rem;
     text-align: center;
@@ -476,13 +470,10 @@ main {
         line-height: 1.5rem;
     }
 }
-
-
 /* END OF THE DESCRIPTION SECTION */
 
 
 /* WHAT WE DO SECTION */
-
 .what-we-do__section {
     margin-top: 4rem;
     padding: 0 6rem;
@@ -682,9 +673,6 @@ main {
             grid-column-gap: 1.8rem;
             grid-template-columns: repeat(4, 23%);
         }
-        /* .star{
-        margin: 0;
-      } */
     }
 }
 
@@ -699,18 +687,14 @@ main {
         font-size: 1.2rem;
     }
 }
-
-
 /* END OF WHAT WE DO SECTION */
 
 
 /* BEGINNING OF WHAT WE OFFER SECTION */
-
 .what-we-offer__container {
     /* padding: 0 6rem; */
     margin-top: 1rem;
     padding: 0 1.5rem;
-    /* font-family: 'Thasadith', sans-serif; */
 }
 
 .what-we-offer__heading {
@@ -1000,13 +984,10 @@ a:active {
         cursor: default;
     }
 }
-
-
 /* END OF WHAT WE OFFER SECTION */
 
 
 /* BEGINNING OF THE COMPANY DETAILS */
-
 .company-details {
     background: url("./images/counter.jpg");
     background-repeat: no-repeat;
@@ -1135,13 +1116,10 @@ a:active {
         background-attachment: fixed;
     }
 }
-
-
 /* END OF THE COMPANY DETAILS */
 
 
 /* CODE FOR MODAL*/
-
 .modal {
     opacity: 0;
     visibility: hidden;
@@ -1371,6 +1349,4 @@ a:active {
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
-
 /* END OF THE MODAL SECTION */

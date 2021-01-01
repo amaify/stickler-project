@@ -4,7 +4,6 @@ main {
 
 
 /* BEGINNING OF THE ABOUT US HEADER */
-
 .about-us__heading {
     background: url("../images/slideShow/image3.jpg");
     background-repeat: no-repeat;
@@ -70,13 +69,10 @@ main {
         font-size: 1.2rem;
     }
 }
-
-
 /* END OF THE ABOUT US HEADER */
 
 
 /* BEGINNING OF THE ABOUT US DESCRIPTION */
-
 .about-us__description {
     margin-top: 4rem;
     padding: 0 6rem;
@@ -131,7 +127,6 @@ main {
 }
 
 .about-us__left p {
-    /* font-weight: 500; */
     line-height: 2rem;
     color: #6d6c6c;
 }
@@ -253,13 +248,10 @@ main {
         text-align: center;
     }
 }
-
-
 /* END OF THE ABOUT US DESCRIPTION */
 
 
 /* BEGINING OF THE QUALITY SECTION */
-
 .quality-container {
     margin-top: 4rem;
     padding: 4rem 0;
@@ -427,13 +419,10 @@ main {
         font-size: 1.6rem;
     }
 }
-
-
 /* END OF THE QUALITY SECTION */
 
 
 /* BEGINING OF HOW IT WORKS SECTION */
-
 .how-it-works__container {
     margin-top: 5rem;
     padding: 4rem 0;
@@ -534,13 +523,10 @@ main {
         margin-top: 5rem;
     }
 }
-
-
 /* END OF HOW IT WORKS SECTION */
 
 
 /* BEGINING OF THE CLIENTS SECTION */
-
 .client-response__container {
     margin-top: 3rem;
     padding: 3rem 0;
@@ -578,79 +564,6 @@ main {
     display: block;
     margin: 0.4rem auto 0 auto;
 }
-
-
-/* .client-response__header */
-
-
-/* .client-response__item:hover{
-  background: black;
-  color: white;
-  cursor: pointer;
-}
-
-.client-response__item:hover .client-image{
-  border: 2px solid white;
-}
-
-.response-image img{
-  width: 35%;
-  height: 35%;
-  border-radius: 50%;
-  border: 2px solid green;
-}
-
-#client-name{
-  font-weight: bold;
-}
-
-.response-text{
-  text-align: center;
-}
-
-.client-response__items{
-  padding: 0 6rem;
-  margin-top: 3rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-}
-
-.client-response__item{
-  -webkit-flex-basis: 33%;
-      -ms-flex-preferred-size: 33%;
-          flex-basis: 33%;
-}
-
-.design{
-  background: lightgreen;
-  border-radius: 16px;
-  text-align: center;
-  padding: 1.5rem;
-  position: relative;
-  -webkit-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
-}
-
-@supports ((display: -ms-grid) or (display: grid)) {
-  .client-response__items{
-    padding: 0 6rem;
-    margin-top: 5rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 33% 2rem 33% 2rem 33%;
-    grid-template-columns: repeat(3, 33%);
-    grid-column-gap: 2rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-  }
-} */
 
 .testimonials {
     width: 100%;
@@ -983,6 +896,4 @@ main {
         background-attachment: fixed;
     }
 }
-
-
 /* END OF THE HOW IT WORKS SECTION */

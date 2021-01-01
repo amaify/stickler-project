@@ -47,7 +47,6 @@ main {
 .contact__text p {
   color: #ffffff;
   margin-top: 0.5rem;
-  /* font-weight: 500; */
   font-size: 1.2rem;
 }
 
@@ -563,7 +562,6 @@ main {
 
 .form-error {
   background: orangered;
-  /* width: 100%; */
   padding: 0.3rem 0.5rem;
   margin-bottom: 0.2rem;
   display: none;

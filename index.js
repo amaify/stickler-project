@@ -13,7 +13,7 @@ for (let i = 0; i < btn.length; i++) {
 }
 // END OF CODE FOR ADDING AN ACTIVE CLASS TO A LINK
 
-// BEGINING OF CODE FOR OPENING AND CLOSING THE SIDEDRAWER
+// BEGINNING OF CODE FOR OPENING AND CLOSING THE SIDEDRAWER
 let toggle = document.getElementById("toggle");
 let nav = document.getElementById("mobileNav");
 let backDrop = document.querySelector(".backdrop");
@@ -54,32 +54,6 @@ function scrollFunction() {
   }
 }
 
-// END OF CODE FOR FIXING OUR MAIN NAVIGATION BAR TO THE TOP ON SCROLL
-
-// $(document).ready(function() {
-//
-//     /* Every time the window is scrolled ... */
-//     $(window).scroll( function(){
-//
-//         /* Check the location of each desired element */
-//         $('section').each( function(i){
-//
-//             var bottom_of_object = $(this).position().top + $(this).outerHeight();
-//             var bottom_of_window = $(window).scrollTop() + $(window).height();
-//
-//             /* If the object is completely visible in the window, fade it it */
-//             if( bottom_of_window > bottom_of_object ){
-//
-//                 $(this).animate({'opacity':'1'},600);
-//
-//             }
-//
-//         });
-//
-//     });
-//
-// });
-
 //Code for bringing out the modal
 const serviceItems = document.querySelectorAll(".services__item");
 const modal = document.querySelectorAll(".modal");
@@ -107,3 +81,8 @@ function closeBackdrop() {
     mods.classList.remove("open__modal");
   });
 }
+
+//CODE FOR AUTOMATICALLY GETTING THE CURRENT YEAR
+const year = document.querySelector(".rights");
+const currentYear = new Date().getUTCFullYear();
+year.children[0].innerHTML = currentYear

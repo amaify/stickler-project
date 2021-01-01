@@ -280,18 +280,6 @@
           <li>
             <a href="../services/services.html">School Cleaning</a>
           </li>
-
-          <!-- <li>
-            <a href="../services/services.html">Bond Cleaning</a>
-          </li>
-
-          <li>
-            <a href="../services/services.html">Emergency Cleaning</a>
-          </li>
-
-          <li>
-            <a href="../services/services.html">Deceased Estate Cleaning</a>
-          </li> -->
         </ul>
       </div>
     </div>
